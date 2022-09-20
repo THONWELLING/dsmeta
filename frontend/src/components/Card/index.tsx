@@ -1,4 +1,3 @@
-import { Children } from 'react'
 import * as C from'./styles'
 
 interface CardProps {
@@ -7,7 +6,7 @@ interface CardProps {
   children?: React.ReactNode
 }
 
-const SalesCard = ({ width = '100%', height = 'auto', children }: CardProps) => {
+const SalesCard = ({ children, width = '100%', height = 'auto'  }: CardProps) => {
   return(
     <C.Container width={width} height={height} >
       <C.Subtitle>Vendas</C.Subtitle>

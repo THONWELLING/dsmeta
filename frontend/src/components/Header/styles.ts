@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  background: linear-gradient(180deg, #102347 0%, #181818 100%);
+  background: linear-gradient(180deg, #606462 0%, #253542 100%);
   height: 220px;
   display: flex;
   align-items: center;
@@ -23,5 +23,16 @@ export const Title = styled.h1`
 export const Link = styled.p`
   font-size: 14px;
   font-weight: 300;
+
+  a {
+    color: red;
+    font-style: italic;
+    font-size: 16px;
+
+    &:hover {
+      color: violet;
+      transition: all ease 0.3s;
+    }
+  }
 
 `

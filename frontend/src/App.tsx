@@ -1,10 +1,10 @@
 import Header from "./components/Header"
-import Button from "./components/Buttom"
+// import Button from "./components/Buttom"
 import SalesCard from "./components/Card"
 import MainContent from "./components/Content"
 import Footer from "./components/Footer"
 import Input from "./components/Input"
-import DsTable from "./components/Table"
+// import DsTable from "./components/Table"
 
 
 const App = () => {
@@ -12,11 +12,11 @@ const App = () => {
     <>
       <Header />
       <MainContent>
-        <SalesCard width="90%">
+         <SalesCard width="100%">
           <Input />
           <Input />
-          <DsTable />
-        </SalesCard>
+      </SalesCard>
+        {/* <DsTable /> */}
       </MainContent>
       <Footer />
     </>

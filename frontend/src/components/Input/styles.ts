@@ -6,8 +6,9 @@ import styled from "styled-components";
 export const InputContainer = styled.div`
   width: 30%;
   height: 46px;
-  background-color: #1b2531;
-  border: 1px solid #384459;
+  background-color: transparent ;
+  border: 2px solid #384459;
+  border-radius: 10px;
   color: #9aaabe;
   padding: 0 20px;
   font-size: 18px;
@@ -17,10 +18,13 @@ export const InputContainer = styled.div`
     font-size: 1rem;
     font-weight: 400;
     font-style: italic;
-    background: transparent;
+    background-color: transparent ;
     border: 0;
     width: 100%;
+    height: 100%;
     margin: 0 30px;
+    outline: none;
+  
     
 
     @media(min-width: 280px)and (max-width: 820px) {
