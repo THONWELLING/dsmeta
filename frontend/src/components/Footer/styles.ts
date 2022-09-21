@@ -3,9 +3,11 @@ import styled from "styled-components"
 
 export const FooterContainer = styled.div`
   width: 100vw;
-  height: 12vh;
-  position: absolute;
+  height: 5rem;
+  position: fixed;
   bottom: 0;
+  right: 0;
+  left: 0;
   display: flex;
   color: #ffff;
   line-height: 25px;

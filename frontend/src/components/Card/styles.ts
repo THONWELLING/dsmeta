@@ -7,7 +7,8 @@ export const Container = styled.div<{
   }>`
   width: 90%;
   height: ${(props) => props.height};
-  background-color: gray;
+  background-color: #141414;
+  opacity: 0.7;
   border-radius: 10px;
   padding: 30px 10px;
 

@@ -18,11 +18,12 @@ export const InputContainer = styled.div`
     font-size: 1rem;
     font-weight: 400;
     font-style: italic;
+    color: #C0C0C0;
     background-color: transparent ;
     border: 0;
     width: 100%;
     height: 100%;
-    margin: 0 30px;
+    margin: 0 20px;
     outline: none;
   
     
