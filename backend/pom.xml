@@ -13,7 +13,7 @@
 	<artifactId>dsmeta</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>dsmeta</name>
-	<description>Projeto  da Semana Spring React Devsuperior</description>
+	<description>Projeto  da Semana Spring React</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
