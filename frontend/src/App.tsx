@@ -11,7 +11,7 @@ const App = () => {
     <>
       <Header />
       <MainContent>
-        <SalesCard width="100%" height="90%">
+        <SalesCard width="100%" height="100%">
           <Input />
           <Input />
           <DsTable />

@@ -7,6 +7,7 @@ export const Container = styled.div<{
   }>`
   width: 90%;
   height: ${(props) => props.height};
+  overflow-Y: scroll;
   background-color: #141414;
   opacity: 0.7;
   border-radius: 10px;
