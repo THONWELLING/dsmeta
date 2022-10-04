@@ -73,7 +73,7 @@ const DsTable = () => {
                 <td>R$ {item.amount.toFixed(2)}</td>
                 <td>
                   <C.DsButtonContainer>
-                    <Button />
+                    <Button saleId={item.id} />
                   </C.DsButtonContainer>
                 </td>
               </tr>
