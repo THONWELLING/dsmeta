@@ -1,4 +1,4 @@
-import { InputHTMLAttributes } from "react";
+import { useState, InputHTMLAttributes } from "react";
 import * as C from "./styles";
 
 const Input = (props: InputHTMLAttributes<HTMLInputElement>) => {
