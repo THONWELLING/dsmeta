@@ -21,13 +21,17 @@ const App = () => {
         <SalesCard width="100%" height="100%">
           <DatePicker
             selected={minDate}
-            onChange={(date: Date) => {}}
+            onChange={(date: Date) => {
+              setMinDate(date);
+            }}
             dateFormat="dd/MM/yyy"
             customInput={<Input />}
           />
           <DatePicker
             selected={maxDate}
-            onChange={(date: Date) => {}}
+            onChange={(date: Date) => {
+              setMaxDate(date);
+            }}
             dateFormat="dd/MM/yyy"
             customInput={<Input />}
           />

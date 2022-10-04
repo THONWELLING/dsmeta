@@ -1,23 +1,20 @@
-import { useState } from "react"
-import * as C from './styles'
+import { useState, useEffect } from "react";
+import * as C from "./styles";
 
-import axios from "axios"
+import axios from "axios";
 
-import Button from "../Buttom"
-import { useEffect } from 'react'
-import { BASE_URL } from '../../utils/request'
-import { Sale } from '../../models/sale'
-
+import Button from "../Buttom";
+import { BASE_URL } from "../../utils/request";
+import { Sale } from "../../models/sale";
 
 const DsTable = () => {
-  const [sales, setSales] = useState<Sale[]>([])
+  const [sales, setSales] = useState<Sale[]>([]);
 
   useEffect(() => {
-    axios.get(`${BASE_URL}/sales`)
-    .then(response => {
-      setSales(response.data.content)
-    })
-  }, [])
+    axios.get(`${BASE_URL}/sales`).then((response) => {
+      setSales(response.data.content);
+    });
+  }, []);
   return (
     <>
       <C.DsTable>
@@ -33,11 +30,13 @@ const DsTable = () => {
           </tr>
         </C.DsHead>
         <C.DsBody>
-          {sales.map(item => {
-            return(
+          {sales.map((item) => {
+            return (
               <tr key={item.id}>
                 <td className="show992">{item.id}</td>
-                <td className="show576">{new Date(item.date).toLocaleDateString()}</td>
+                <td className="show576">
+                  {new Date(item.date).toLocaleDateString()}
+                </td>
                 <td>{item.sellerName}</td>
                 <td className="show992">{item.visited}</td>
                 <td className="show992">{item.deals}</td>
@@ -48,25 +47,12 @@ const DsTable = () => {
                   </C.DsButtonContainer>
                 </td>
               </tr>
-            )
+            );
           })}
-          <tr>
-             <td className="show992">01</td>
-              <td className="show576">20/09/2022</td>
-              <td>Anakin Skywalker</td>
-              <td className="show992">40</td>
-              <td className="show992">40</td>
-              <td>R$ 55300.00</td>
-              <td>
-                <C.DsButtonContainer>
-                  <Button />
-                </C.DsButtonContainer>
-              </td>
-          </tr>
         </C.DsBody>
       </C.DsTable>
     </>
-  )
-}
+  );
+};
 
-export default DsTable
+export default DsTable;
