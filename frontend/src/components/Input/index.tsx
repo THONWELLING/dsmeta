@@ -1,14 +1,12 @@
-import { InputHTMLAttributes } from 'react'
-import * as C from './styles'
-
+import { InputHTMLAttributes } from "react";
+import * as C from "./styles";
 
 const Input = (props: InputHTMLAttributes<HTMLInputElement>) => {
-  return(
+  return (
     <C.InputContainer>
-      <input {...props}/>
+      <input {...props} />
     </C.InputContainer>
-  )
-}
+  );
+};
 
-
-export default Input
+export default Input;
